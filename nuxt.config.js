@@ -1,3 +1,5 @@
+import webpack from "webpack";
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -24,12 +26,16 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    'element-ui/lib/theme-chalk/index.css'
+    'element-ui/lib/theme-chalk/index.css',
+    '../assets/index.css',
+    '../assets/reset.css',
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    '@/plugins/fontawesome.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -54,5 +60,11 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [/^element-ui/],
+    plugins : [
+      new webpack.ProvidePlugin( {
+        // global modules
+        $ : "jquery",
+      } ),
+    ],
   }
 }

@@ -1,0 +1,187 @@
+
+.main-container {
+  width: 80%;
+  margin: auto;
+  height: calc(100vh - 0rem);
+  display: flex;
+  flex-direction: row;
+}
+.left-container {
+  background-color: #fafafa;
+  width: 25%;
+  float: left;
+  height: auto;
+  padding: 3rem;
+}
+.right-container {
+  width: 100%;
+  float: left;
+  height: auto;
+  overflow: auto;
+  margin:3rem;
+}
+.timeline-area {
+  height:330px;
+  width:100%;
+  display: inline-flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  margin-bottom:70px;
+}
+
+.timeline-area > .left-area {
+  display: inline-block;
+  width: 25%;
+  padding-top:1rem;
+  padding-left:1rem;
+}
+
+.timeline-area > .right-area {
+  display: inline-block;
+  width: 75%;
+  padding-top:1rem;
+  padding-left:1rem;
+}
+.timeline-area > .right-area > .timeline-table-area {
+  width: 90%;
+  border: solid 1px #dadada;
+  border-radius: 15px;
+}
+
+
+
+.header13 {
+  font-size:1.3rem;
+}
+
+.header12 {
+  font-size:1.2rem;
+}
+
+.header11 {
+  font-size:1.1rem;
+}
+
+.header1 {
+  font-size:1.0rem;
+}
+
+.career-area {
+  height:1000px;
+}
+.intro-container {
+  height : 80%;
+}
+.mg-bt20{
+  margin-bottom:20px;
+}
+
+.tit {
+  font-size:18px;
+}
+.tit.name {
+  font-size:30px;
+  font-weight:bold;
+}
+
+.my-picture-area {
+  height: 150px;
+  width: 150px;
+  margin: 15px auto;
+  text-align: center;
+}
+.left-container .intro-container .my-picture-area .mypic {
+  width:120px;
+  border-radius: 15px;
+}
+.txt-align-center {
+  text-align: center;
+}
+.ml15 {
+  margin-left:15px;
+}
+.m15 {
+  margin:15px;
+}
+.mb5 {
+  margin-bottom:5px;
+}
+.mb15 {
+  margin-bottom:15px;
+}
+.mb30 {
+  margin-bottom:30px;
+}
+.mt15 {
+  margin-top:15px;
+}
+
+
+.txt-align-left {
+  text-align: left;
+}
+.line-height13{
+  line-height: 1.3;
+}
+.custom-badge {
+  background-color: rgb(136 140 248);
+  width: fit-content;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  border-radius: 12px;
+  padding: 4px 9px;
+  margin: 2px;
+  font-size: 13px;
+  min-width: 30px;
+}
+.custom-badge-career {
+  background-color: #ffffff;
+  width: fit-content;
+  color: #878787;
+  text-align: center;
+  border-radius: 12px;
+  padding: 4px 13px;
+  font-size: 11px;
+  line-height: 11px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid gainsboro;
+}
+.word-break-keep-all {
+  word-break: keep-all;
+}
+.flex-container {
+  margin-top:70px;
+  display:flex;
+}
+.career-area > .flex-container > .career-left-area {
+  width:25%;
+  background-color: #ffffff;
+}
+.career-area > .flex-container > .career-right-area {
+  margin-right: 35px;
+  padding-left: 1rem;
+  width:75%;
+  background-color: #ffffff;
+}
+.career-list {
+  margin-top :8px;
+}
+.career-list > li:nth-child(1) {
+  font-weight: bold;
+}
+.career-list li {
+  line-height: 1.6;
+}
+
+.btn-color-purple {
+  background-color: rgb(150 153 255);
+  border-color: rgb(190, 192, 255);
+  width: fit-content;
+  line-height:0;
+}
+.el-button--primary:focus, .el-button--primary:hover {
+  background: rgb(109, 113, 253);
+}
